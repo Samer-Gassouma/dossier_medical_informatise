@@ -131,7 +131,7 @@ export default function Examen_endobuccal() {
             value={medicalCondition}
             onChange={(e) => setMedicalCondition(e.target.value)}
           />
-          <h2 className="text-2xl font-bold mb-4">Doctor's Notes</h2>
+          <h2 className="text-2xl font-bold mb-4">Doctor Notes</h2>
           <textarea
             className="bg-gray-700 p-2 mb-4 w-full rounded-md"
             rows="4"

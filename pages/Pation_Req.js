@@ -16,7 +16,7 @@ function Pation_Req() {
     if (user === null) {
       router.push("/Login");
     }
-  }, []);
+  }, [user, router]);
  
   const handleSearch = (event) => {
     setMessage("Loading...");

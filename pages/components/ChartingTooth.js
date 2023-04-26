@@ -12,7 +12,7 @@ export default function ChartingTooth() {
       }
       );
 
-  }, []);
+  }, [patientID]);
 
   const ToothColor = (data) => {
     data.map((tooth) => {

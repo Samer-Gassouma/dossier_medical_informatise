@@ -165,7 +165,7 @@ export default function Examen_endobuccal() {
             Computerized Medical Record
           </h1>
           <p className="text-lg text-gray-300 mb-8">
-            Keep track of your patients' medical history
+            Keep track of your patients medical history
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <button

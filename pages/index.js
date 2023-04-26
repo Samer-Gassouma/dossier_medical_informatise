@@ -1,4 +1,4 @@
-import LoginForm from "./Login";
+import Login from "./Login";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
@@ -47,7 +47,7 @@ export default function Home() {
   }
 
   if (!user) {
-    return <Logout />;
+    return <Login />;
   }
 
   return (

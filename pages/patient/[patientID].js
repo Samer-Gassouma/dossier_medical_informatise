@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useCallback, useEffect } from "react";
-import Loading from "../../components/Loading";
+import Loading from "../Loading";
 
 export default function PatientPage({ patientID }) {
   const [note, setNote] = useState("");
@@ -57,7 +57,7 @@ export default function PatientPage({ patientID }) {
       setMedicalCondition("");
       setNote("");
     },
-    [medicalCondition, note, user, patientID]
+    [medicalCondition, note, patientID]
   );
 
   const handleExamen = useCallback(() => {
@@ -65,7 +65,7 @@ export default function PatientPage({ patientID }) {
       pathname: "/Examen_Clinique",
       query: { results: JSON.stringify(patientID) },
     });
-  }, [router, patientID]);
+  }, [patientID]);
 
   if (!patient || !medicalHistory) {
     return <Loading />;

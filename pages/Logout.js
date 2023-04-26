@@ -11,7 +11,7 @@ export default function Logout() {
             router.push("/");
             Cookies.remove("token");
         }
-    }, []);
+    }, [router]);
     return (
         <Login />
     );
